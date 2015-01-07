@@ -33,9 +33,9 @@ private final static String DEFAULT_PROJ_OUTPUT_PATH = "../../_fwGreenDAO/src";
  */
 ```
 
-Provide the "output_package" in the destination project.
-By default DAO files will be placed in "output_package.dao" package.
-If needed, you can change it by overriding the initSchema() method in the concrete schema class.
+<br>Providing the "output_package" in the destination project.
+<br>By default DAO files will be placed in "output_package.dao" package.
+<br>If needed, you can change it by overriding the initSchema() method in the concrete schema class.
 ```java
 private List <Schema> getSchemas()
 	{
