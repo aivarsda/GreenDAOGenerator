@@ -1,6 +1,9 @@
 Green DAO Generator Example
 =====================
-This is an example of the Green DAO Generator usage
+This is a simple yet flexible framework for the Green DAO Generator:
+* All entities have Serializable implementation.
+* Ability to generate several schemas to the project. 
+* Ability to generate for several projects. (Handling different projects from one place)
 
 
 How To Use
@@ -33,7 +36,7 @@ private final static String DEFAULT_PROJ_OUTPUT_PATH = "../../_fwGreenDAO/src";
  */
 ```
 
-<br>Providing the "output_package" in the destination project.
+Providing the "output_package" in the destination project.
 <br>By default DAO files will be placed in "output_package.dao" package.
 <br>If needed, you can change it by overriding the initSchema() method in the concrete schema class.
 ```java
