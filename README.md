@@ -6,28 +6,32 @@ This is an example of the Green DAO Generator usage
 How To Use
 --------------
 
-- <b>1. Add the :</b>
+- <b>1. Generator class :</b>
 <br>In the Generator class, add the default output project path.
 ```java
 private final static String DEFAULT_PROJ_OUTPUT_PATH = "../../_fwGreenDAO/src";
 ```
 - <b>2. Adding the schemas:</b>
-Here is the ERD for the Store schema:
-	 ----------        ----------
-	| Customer | ---< | Purchase |
-	 ----------        ----------
-	                       |
-          						   |
-          						  / \
-      				     --------------
-      				    | ProductOrder |
-      				     --------------
-          						  \ /
-          						   |
-          						   |
-      				       ---------
-      				      | Product |
-      				       ---------	 
+```java
+/**
+ * Here is the ERD for the Store schema:
+ *	 ----------        ----------
+ *	| Customer | ---< | Purchase |
+ *	 ----------        ----------
+ *	                       |
+ *						   |
+ *						  / \
+ *				     --------------
+ *				    | ProductOrder |
+ *				     --------------
+ *						  \ /
+ *						   |
+ *						   |
+ *				       ---------
+ *				      | Product |
+ *				       ---------	
+ */
+```
 
 Provide the "output_package" in the destination project.
 By default DAO files will be placed in "output_package.dao" package.
