@@ -12,7 +12,7 @@ public abstract class AGenEntity implements IEntity
 	protected Schema _schema;
 	
 	@SuppressWarnings("unused")
-	private AGenEntity() {}; // java.lang.NoClassDefFoundError: freemarker/template/ObjectWrapper
+	private AGenEntity() {}; 
 	
 	public AGenEntity(Schema schema) 
 	{
