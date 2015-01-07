@@ -54,11 +54,21 @@ private List <Schema> getSchemas()
 - <b>3. <b>Generating the schemas:</b>
  
 ```java
-for (int i=0; i<schemaList.size(); i++)
+public void generate()
+{
+	List <Schema> schemaList = getSchemas();
+try 
+{
+	for (int i=0; i<schemaList.size(); i++)
 	{
 		Schema schema = schemaList.get(i);
 		new DaoGenerator().generateAll(schema, ((AGenSchema)schema).getOutRelativePath());
 	}
+} 
+catch (Exception e) {
+    e.printStackTrace();
+}
+}
 ```
 
 
